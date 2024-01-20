@@ -1,0 +1,19 @@
+.customPagination{
+
+   .page-link{
+      color: $dark;
+      border: 0px;
+      background-color: rgba(256,256,256,0);
+   }
+
+   .page-link:hover{
+      opacity: 0.6;
+   }
+
+   .active{
+      .page-link{
+      color: $warning;
+      }
+
+   }
+}

@@ -1,0 +1,24 @@
+.bgChatBox{
+   //transform:rotate(45deg); 
+   background-color: #ffffff;
+   border: $dark 1.75px solid;
+   padding: 5px 20px;
+   border-radius: 15px;
+   position: relative;
+   top:-55px;
+   white-space: nowrap;
+
+   &::before{
+      content: "";
+      position: absolute;
+      background-color: #ffffff;
+      bottom:-11px;
+      right:44%;
+      width: 20px;
+      height: 20px;
+      border-bottom: $dark 1.75px solid;
+      border-right: $dark 1.75px solid;
+      transform:rotate(45deg);
+      z-index: 2;
+   }
+}

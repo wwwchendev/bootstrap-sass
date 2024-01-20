@@ -1,0 +1,65 @@
+
+.imgHover{
+   & .imgTop{
+      opacity: 1;
+      transition: opacity 0.5s ease; 
+      position: absolute;
+      top: 0;
+      bottom:0;
+      left: 0;
+      right:0;
+   }
+
+   &:hover {
+      .imgTop{
+         opacity: 0;
+      }
+   }
+}
+
+.textHover:hover{
+   color: $warning;
+}
+   
+
+
+
+.bgChatBox{
+   opacity: 0;
+}
+
+// 首頁右下角-客製似顏繪
+.chatHover:hover {
+   .bgChatBox{
+      opacity: 1;
+   }
+}
+
+
+// nav-link
+
+   .hoverShow{
+      display: none;   
+   }  
+   
+   .nameHover{
+      transition: all 0.2s step-start;
+   }
+      
+   .nameHover:hover{
+      color: $warning;
+      .hoverShow{
+      display: inline-block;     
+      }
+   }
+
+   @include media-breakpoint-down(md) {   
+      .hoverShow{
+         display: none;   
+      }  
+      .nameHover:hover{
+         .hoverShow{
+         display: none;   
+         }
+      }
+   }

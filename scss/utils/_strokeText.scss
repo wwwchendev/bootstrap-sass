@@ -1,0 +1,13 @@
+.strokeText-filled {
+   position: relative;
+   z-index: 2;
+   color: #848975;
+   -webkit-text-stroke: 1px #848975;
+   
+   &::before {
+      content: attr(data-storke);
+      position: absolute;
+      z-index: -1; /* 將z-index設置為負值 */
+      -webkit-text-stroke: 10px white;
+   }
+}

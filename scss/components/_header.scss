@@ -1,0 +1,16 @@
+.header {
+   --imgw: 375;
+   --imgh: 635;
+   width: 100%;
+   min-height: calc(100vw * var(--imgh) / var(--imgw));
+   background-image: url(../images/home_mobile.png);
+}
+
+
+@include media-breakpoint-up(sm) { 
+   .header {
+      --imgw: 1440;
+      --imgh: 810;
+      background-image: url(../images/home.png);
+   }
+}
